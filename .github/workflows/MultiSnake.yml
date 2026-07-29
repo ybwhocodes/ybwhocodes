@@ -17,10 +17,10 @@ jobs:
 
       # Generate Snake animation
       - name: 🐍 Generate MultiSource Snake animation
-        uses: Zqzqsb/MultiSourceSnake@v1.0
+        uses: Platane/snk@v3
         with:
-          GITHUB_USER: ybwhocodes
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_user_name: ybwhocodes
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
